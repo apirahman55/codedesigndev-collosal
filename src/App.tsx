@@ -1,13 +1,10 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import HomeTemplate from './components/templates/HomeTemplate';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-  return (
-    <div className='bg-black text-white h-screen'>
-      Hello
-    </div>
-  )
+  return <HomeTemplate></HomeTemplate>;
 }
 
-export default App
+export default App;
