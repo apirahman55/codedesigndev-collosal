@@ -1,6 +1,6 @@
 import React, { ComponentProps, forwardRef, ReactNode } from 'react';
-import BaseButton from '../atoms/button';
-import DecorationHero from '../molecules/home/decoration/decoration-hero';
+import { Box } from '../atoms/icons';
+import HeroDecoration from '../molecules/hero-decoration';
 
 const HomeTemplate = forwardRef<HTMLDivElement, ComponentProps<'div'>>(
   ({ children, ...rest }, ref) => {
@@ -10,7 +10,7 @@ const HomeTemplate = forwardRef<HTMLDivElement, ComponentProps<'div'>>(
         className='bg-dark text-white min-h-screen relative'
         {...rest}
       >
-        <BaseButton />
+        <HeroDecoration />
       </div>
     );
   }
